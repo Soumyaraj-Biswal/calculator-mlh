@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>SIMPCALC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3 class="error"></h3>
+  <form class="calculator" name="calculator">
+    
+    <input class="value" type="text" name="txt" readonly>
+    <span class="num clear" onclick="document.calculator.txt.value = ''">C</span>
+    <span class="num" onclick="document.calculator.txt.value += '.'">.</span>
+    
+    <span class="num" onclick="document.calculator.txt.value = document.calculator.txt.value.slice(0,-1)">⌫</span>
+    
+
+    
+    <span class="num" onclick="document.calculator.txt.value += '/'">/</span>
+    <span class="num" onclick="document.calculator.txt.value += '7'">7</span>
+    <span class="num" onclick="document.calculator.txt.value += '8'">8</span>
+    <span class="num plus" onclick="document.calculator.txt.value += '9'">9</span>
+
+    <span class="num" onclick="document.calculator.txt.value += '*'">*</span>
+    <span class="num" onclick="document.calculator.txt.value += '4'">4</span>
+    <span class="num" onclick="document.calculator.txt.value += '5'">5</span>
+
+
+
+    <span class="num" onclick="document.calculator.txt.value += '6'">6</span>
+    <span class="num" onclick="document.calculator.txt.value += '-'">-</span>
+    <span class="num" onclick="document.calculator.txt.value += '1'">1</span>
+    <span class="num" onclick="document.calculator.txt.value += '2'">2</span>
+
+
+    <span class="num" onclick="document.calculator.txt.value += '3'">3</span>
+    
+    <span class="num" onclick="document.calculator.txt.value += '+'">+</span>
+    <span class="num" onclick="document.calculator.txt.value += '('">(</span>
+    <span class="num" onclick="document.calculator.txt.value += '0'">0</span>
+
+    <span class="num" onclick="document.calculator.txt.value += ')'">)</span>
+    <span class="num" onclick="cal()">=</span>
+
+    <script src="app.js"></script>
+
+  </form>
+</body>
+</html>
